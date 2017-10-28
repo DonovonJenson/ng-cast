@@ -2,12 +2,12 @@
   <nav class="navbar">
     <div class="col-md-6 col-md-offset-3">
     <!-- <input ng-model="$ctrl.videoData"> -->
-      <search><h5><em>search</em> component goes here</h5></search>
+      <search searchbuttonclick="$ctrl.searchClick"><h5><em>search</em> component goes here</h5></search>
     </div>
   </nav>
   <div class="row">
     <div class="col-md-7">
-      <video-player current="$ctrl.videoData[0]"><h5><em>videoPlayer</em> component goes here</h5></video-player>
+      <video-player current="$ctrl.videoToPlay"><h5><em>videoPlayer</em> component goes here</h5></video-player>
     </div>
     <div class="col-md-5">
       <video-list videos="$ctrl.videoData" titleclickfn="$ctrl.titleclick"><h5><em>videoList</em> component goes here</h5></video-list>
