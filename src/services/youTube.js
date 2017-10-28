@@ -7,7 +7,7 @@ angular.module('video-player')
       url: 'https://www.googleapis.com/youtube/v3/search',
       params: options
     }).then(function successCallback(response) {
-      console.log('GET CALL WORKED, RESPONSE.DATA.ITEMS = ', response.data.items);
+      //console.log('GET CALL WORKED, RESPONSE.DATA.ITEMS = ', response.data.items);
       callBack(response.data.items);
 
     }, function errorCallback(response) {

@@ -2,11 +2,11 @@ angular.module('video-player')
 .component('videoListEntry', {
   bindings: {
     current: '<',
-    clickontitle: '<'
+    clickOnTitle: '<'
   },
   controller: function () {
     this.$onInit = function() {
-      console.log('WHAT IS IN VIDEO LISTENTRY = ', this.clickontitle);
+      //console.log('WHAT IS IN VIDEO LISTENTRY = ', this.clickOnTitle);
 
     };
   },

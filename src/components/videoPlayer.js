@@ -6,7 +6,7 @@ angular.module('video-player')
   },
   controller: function() {
     this.$onInit = function () {
-      console.log('VIDPLAYER CURRENT = ', this.current);
+      //console.log('VIDPLAYER CURRENT = ', this.current);
     };
   },
   templateUrl: 'src/templates/videoPlayer.html'

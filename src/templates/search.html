@@ -1,7 +1,15 @@
-<div class="search-bar form-inline">
-  <input class="form-control" type="text" ng-model="$ctrl.currentSearch"/>
+<div class="search-bar form-inline" ng-model-options="{ debounce: 500}">
+  <input
+    class="form-control"
+    type="text"
+    ng-model="$ctrl.currentSearch"
+    ng-change="$ctrl.searchButtonClick($ctrl.currentSearch, $event);"
+  />
   <!-- <button class="btn" ng-click="$ctrl.searchbuttonclick()"> -->
-<button class="btn" ng-click="$ctrl.searchbuttonclick($ctrl.currentSearch); $ctrl.clear()">
+  <button
+    class="btn"
+    ng-click="$ctrl.searchButtonClick($ctrl.currentSearch, $event); $ctrl.clear()"
+  >
     <span class="glyphicon glyphicon-search"></span>
   </button>
 </div>
